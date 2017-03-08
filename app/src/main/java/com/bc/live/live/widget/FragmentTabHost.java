@@ -12,6 +12,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -144,7 +145,7 @@ public class FragmentTabHost extends TabHost
             addView(ll, new LayoutParams(
                     ViewGroup.LayoutParams.FILL_PARENT,
                     ViewGroup.LayoutParams.FILL_PARENT));
-
+            Log.e("12345","1234567");
             TabWidget tw = new TabWidget(context);
             tw.setId(android.R.id.tabs);
             tw.setOrientation(TabWidget.HORIZONTAL);
